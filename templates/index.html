@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<!-- after user submit, the sends the form to score with post method -->
+<form action="/score" method="post">
+  <!-- <div style="background-color:red; text-align:center">
+    First word: <input style="width:300px;" class="form-control" type="text" name="string1">
+    Second word: <input style="width:300px;" class="form-control" type="text" name="string2">
+    <input type="submit">
+  </div>
+  <br>
+  <br> -->
+  <div class="form-group w-25 mx-auto mt-5">
+    <input class="form-control" type="text" placeholder="First word" name="string1" required>
+  </div>
+  <div class="form-group w-25 mx-auto">
+    <input class="form-control" type="text" placeholder="Second word" name="string2" required>
+  </div>
+  <div class="form-group w-25 mx-auto" style="text-align:center;">
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+</form>
+
+{% endblock %}

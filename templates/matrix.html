@@ -1,0 +1,43 @@
+
+<table width = "100%" border="1" cellpadding="5">
+  <thead>
+    <tr>
+      <th>&nbsp;</th>
+      <th>&nbsp;</th>
+        {% for x in s2 %}
+          <th>{{x}}</th>
+        {% endfor %}
+    </tr>
+
+    <tr>
+      <th>&nbsp;</th>
+      {% for x in matrix[0] %}
+        <th>{{x[0]}}</th>
+      {% endfor %}
+    </tr>
+
+  </thead>
+
+  <tbody>
+    <tr>
+      <th>0</th>
+      {% for x in matrix[1] %}
+        <td>{{x[0]}}</td>
+      {% endfor %}
+    </tr>
+
+    {% set c = 2 %}
+    {% for x in s1 %}
+    <tr>
+      <th>{{x}}</th>
+      {% for y in matrix[c] %}
+        <td>{{y[0]}}</td>
+        {% set c = c + 1 %}
+        {% endfor %}
+    </tr>
+    {% endfor %}
+
+  </tbody>
+
+</table>
+
