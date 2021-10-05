@@ -1,2 +1,2 @@
 # StringCalc
-An application that depicts the costs of transforming one string into another.
+Developed a Python application that calculates and visualizes the cost of transferring one string to another.
